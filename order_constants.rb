@@ -1,9 +1,12 @@
 module OrderConstants
-  NEW_CONSTACTS_RATIO = 35.0
-  RET_CONSTACTS_RATIO = 65.0
-  ONE_DAY = 60 * 60 * 24 - 1
   ORGANIZATION_ID = 1900010713334
-  TOTAL_RET_CONTACTS = 1000
+
+  ONE_DAY = 60 * 60 * 24 - 1
+
+  NEW_CONSTACTS_AVG_PERCENTAGE = 35.0 / 100
+  RET_CONSTACTS_AVG_PERCENTAGE = 65.0 / 100
+  AVG_ORDERS_PER_DAY = 5
+  AVG_ORDERS_PER_RET_CONTACTS = 5
 
   # rubocop:disable Style/WordArray
   COUPONS_OPTIONS = [
@@ -17,5 +20,6 @@ module OrderConstants
   ].freeze
   # rubocop:enable Style/WordArray
 
-  STATUSE_OPTIONS = %w[placed processing paid canceled].freeze
+  STATUSE_OPTIONS = %w[placed].freeze
+  # STATUSE_OPTIONS = %w[placed processing paid canceled].freeze
 end
